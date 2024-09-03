@@ -2,32 +2,32 @@ const questions = [
     {
         question: "Berapa hasil dari 2x + 5x?",
         options: ["3x", "5x", "7x", "7"],
-        answer: 3
+        answer: 2
     },
     {
         question: "Berapa hasil dari 24y + 10y?",
         options: ["24y", "10y", "34y", "34yy"],
-        answer: 3
+        answer: 2
     },
     {
         question: "Manakah yang bukan termasuk variabel dari 6x + 3y + 2",
         options: ["x", "y", "x dan y", "6 dan 3"],
-        answer: 4
+        answer: 3
     },
     {
         question: "Manakah yang termasuk koefisien dari 6x + 3y + 2",
         options: ["x", "6", "y", "x dan y"],
-        answer: 2
+        answer: 1
     },
     {
         question: "Manakah yang termasuk konstanta 6x + 3y + 2?",
         options: ["x dan y", "6 dan 3", "2", "6 dan y"],
-        answer: 3
+        answer: 2
     },
     {
         question: "Berapa hasil dari 2x + 5y - x + 2y?",
         options: ["x + 7y", "3x + 5y", "x - 5y", "3x + 7y"],
-        answer: 1
+        answer: 0
     }
 ];
 
