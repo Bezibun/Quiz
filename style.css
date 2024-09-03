@@ -1,6 +1,6 @@
 body {
     font-family: "Poppins";
-    background-color: #009688;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(assets/bg.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
