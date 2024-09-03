@@ -1,32 +1,32 @@
 const questions = [
     {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        answer: 1
+        question: "Berapa hasil dari 2x + 5x?",
+        options: ["3x", "5x", "7x", "7"],
+        answer: 3
     },
     {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Lisbon"],
+        question: "Berapa hasil dari 24y + 10y?",
+        options: ["24y", "10y", "34y", "34yy"],
+        answer: 3
+    },
+    {
+        question: "Manakah yang bukan termasuk variabel dari 6x + 3y + 2",
+        options: ["x", "y", "x dan y", "6 dan 3"],
+        answer: 4
+    },
+    {
+        question: "Manakah yang termasuk koefisien dari 6x + 3y + 2",
+        options: ["x", "6", "y", "x dan y"],
         answer: 2
     },
     {
-        question: "What is the largest ocean?",
-        options: ["Atlantic", "Indian", "Pacific", "Arctic"],
-        answer: 2
+        question: "Manakah yang termasuk konstanta 6x + 3y + 2?",
+        options: ["x dan y", "6 dan 3", "2", "6 dan y"],
+        answer: 3
     },
     {
-        question: "What is the square root of 16?",
-        options: ["3", "4", "5", "6"],
-        answer: 1
-    },
-    {
-        question: "What planet is known as the Red Planet?",
-        options: ["Earth", "Mars", "Jupiter", "Saturn"],
-        answer: 1
-    },
-    {
-        question: "What planet is known as the Red Planet?",
-        options: ["Earth", "Mars", "Jupiter", "Saturn"],
+        question: "Berapa hasil dari 2x + 5y - x + 2y?",
+        options: ["x + 7y", "3x + 5y", "x - 5y", "3x + 7y"],
         answer: 1
     }
 ];
@@ -49,7 +49,7 @@ function showQuestion() {
     const optionsContainer = document.getElementById("options-container");
     const nextBtn = document.getElementById("next-btn");
 
-    questionCounter.textContent = `Question ${currentQuestionIndex + 1} of 5`;
+    questionCounter.textContent = `Question ${currentQuestionIndex + 1} of 6`;
     questionText.textContent = questions[currentQuestionIndex].question;
 
     optionsContainer.querySelectorAll(".option-btn").forEach((btn, index) => {
