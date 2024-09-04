@@ -20,6 +20,26 @@ const questions = [
         answer: 1
     },
     {
+        question: "Manakah yang tidak termasuk koefisien dari 5x + 2y + 12",
+        options: ["12", "2", "5", "5 dan 2"],
+        answer: 0
+    },
+    {
+        question: "Manakah yang termasuk konstanta dari 2x + 18y + 32",
+        options: ["x", "2", "32", "x dan y"],
+        answer: 2
+    },
+    {
+        question: "Manakah yang termasuk koefisien dari 8x + 10y + 20",
+        options: ["x", "10", "y", "20"],
+        answer: 1
+    },
+    {
+        question: "Manakah yang termasuk variabel dari x + 5y + 2",
+        options: ["2", "5", "5 dan 2", "x dan y"],
+        answer: 3
+    },
+    {
         question: "Manakah yang termasuk konstanta 6x + 3y + 2?",
         options: ["x dan y", "6 dan 3", "2", "6 dan y"],
         answer: 2
@@ -49,7 +69,7 @@ function showQuestion() {
     const optionsContainer = document.getElementById("options-container");
     const nextBtn = document.getElementById("next-btn");
 
-    questionCounter.textContent = `Question ${currentQuestionIndex + 1} of 6`;
+    questionCounter.textContent = `Question ${currentQuestionIndex + 1} of 10`;
     questionText.textContent = questions[currentQuestionIndex].question;
 
     optionsContainer.querySelectorAll(".option-btn").forEach((btn, index) => {
