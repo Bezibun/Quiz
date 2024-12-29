@@ -86,13 +86,19 @@ function checkAnswer(selectedOption) {
     const optionsContainer = document.getElementById("options-container");
     const nextBtn = document.getElementById("next-btn");
 
+    // Ambil elemen audio
+    const correctSound = document.getElementById("correct-sound");
+    const incorrectSound = document.getElementById("incorrect-sound");
+
     if (selectedOption === correctOption) {
         correctAnswers++;
         optionsContainer.children[selectedOption].style.backgroundColor = "green";
+        correctSound.play(); // Mainkan suara benar
     } else {
         incorrectAnswers++;
         optionsContainer.children[selectedOption].style.backgroundColor = "red";
         optionsContainer.children[correctOption].style.backgroundColor = "green";
+        incorrectSound.play(); // Mainkan suara salah
     }
 
     optionsContainer.querySelectorAll(".option-btn").forEach(btn => {
@@ -101,6 +107,7 @@ function checkAnswer(selectedOption) {
 
     nextBtn.style.display = "block";
 }
+
 
 function nextQuestion() {
     currentQuestionIndex++;
